@@ -3,7 +3,7 @@ import React, { useState, useEffect } from "react"
 function FetchQuote() {
 
   const [quote, setQuote] = useState('');
-  const [loading, setLoading] = useState(true);
+  /*const [loading, setLoading] = useState(true);*/
   const [author, setAuthor] = useState('');
   const [imgSrc, setImgSrc] = useState('');
 
@@ -31,7 +31,7 @@ function FetchQuote() {
     <>
       <h1>{quote}</h1>
       <p>- {author}</p>
-      <img src={imgSrc} />
+      <img src={imgSrc} alt='inspire' />
     </>
   )
 }
